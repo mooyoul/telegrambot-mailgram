@@ -1,0 +1,45 @@
+{
+  "name": "telegrambot-mailgram",
+  "version": "1.0.0",
+  "description": "Receive emails on Telegram, directly.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooyoul/telegrambot-mailgram.git"
+  },
+  "keywords": [
+    "telegram",
+    "email",
+    "telegrambot",
+    "robot"
+  ],
+  "author": "MooYeol Prescott Lee <mooyoul@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mooyoul/telegrambot-mailgram/issues"
+  },
+  "homepage": "https://github.com/mooyoul/telegrambot-mailgram#readme",
+  "dependencies": {
+    "aws-sdk": "^2.3.3",
+    "bluebird": "^3.3.5",
+    "cheerio": "^0.20.0",
+    "debug": "^2.2.0",
+    "dotenv": "^2.0.0",
+    "file-type": "^3.8.0",
+    "mailin": "^3.0.3",
+    "moment": "^2.12.0",
+    "mongoose": "^4.4.12",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-timestamp": "^0.5.0",
+    "node-telegram-bot-api": "^0.21.1",
+    "node-uuid": "^1.4.7",
+    "request": "^2.71.0",
+    "require-dir": "^0.3.0",
+    "sanitize-html": "^1.11.4",
+    "to-markdown": "^3.0.0",
+    "underscore": "^1.8.3"
+  }
+}
