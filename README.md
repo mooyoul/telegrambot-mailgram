@@ -4,11 +4,12 @@
 [![Author Telegram](https://img.shields.io/badge/Telegram-%40mooyoul-blue.svg)](https://telegram.me/mooyoul) [![MailgramBot Telegram](https://img.shields.io/badge/Telegram-%40MailgramBot-blue.svg)](https://telegram.me/MailgramBot)
 
 Telegram Bot API를 사용하는 메일 인바운드 봇
+
 이메일 클라이언트 없이 텔레그램으로 바로 이메일을 받아보세요.
 
 ## Screencast
 [![Youtube Screencast Thumbnail](https://i.ytimg.com/vi/xm4MFdldNI0/hqdefault.jpg)](https://youtu.be/xm4MFdldNI0)
-
+[See screencast on Youtube](https://youtu.be/xm4MFdldNI0)
 
 ## Screenshots
 ![Screenshot 1](https://raw.githubusercontent.com/mooyoul/telegrambot-mailgram/master/images/mailgram_01.png)
