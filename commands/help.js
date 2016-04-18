@@ -11,6 +11,7 @@ module.exports = exports = (bot) => {
       '',
       '/getusername',
       '- 설정된 이메일주소를 출력합니다.',
+      '',
       '/help',
       '- 이 메세지를 출력합니다.',
       '',
