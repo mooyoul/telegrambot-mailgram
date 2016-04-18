@@ -163,27 +163,27 @@ const forwardMessage = (bot, room, data) => {
       }).then((sent) => {
         return injectImages(data.html);
       }).then((body) => {
-        const opts = {
+        return bot._request('sendDocument', {
           qs: {
-            chat_id: room.id
-          }
-        };
-        opts.formData = {
-          document: {
-            value: new Buffer(tpl({
-              subject: data.subject,
-              body: body || data.text,
-              from: data.from,
-              to: data.to,
-              date: moment(data.date).format('YYYY년 M월 D일 A h:mm')
-            }), 'utf8'),
-            options: {
-              filename: `${room.username}_${data.subject.replace(/\s+/g, '_').replace(/[^0-9a-z_]/gi, '').substr(0, 16)}.html`,
-              contentType: 'text/html'
+            chat_id: room.id,
+            disable_notification: true
+          },
+          formData: {
+            document: {
+              value: new Buffer(tpl({
+                subject: data.subject,
+                body: body || data.text,
+                from: data.from,
+                to: data.to,
+                date: moment(data.date).format('YYYY년 M월 D일 A h:mm')
+              }), 'utf8'),
+              options: {
+                filename: `${room.username}_${data.subject.replace(/\s+/g, '_').replace(/[^0-9a-z_]/gi, '').substr(0, 16)}.html`,
+                contentType: 'text/html'
+              }
             }
           }
-        };
-        return bot._request('sendDocument', opts);
+        });
       }).then((sent) => {
         resolve(sent);
       }).catch((e) => {
