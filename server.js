@@ -62,6 +62,7 @@ const db      = mongoose.connect(process.env.MONGO_URL, { options: { db: { safe:
 
   // Bootstrap commands
   require('./commands/start')(bot);
+  require('./commands/help')(bot);
   require('./commands/setusername')(bot);
   require('./commands/getusername')(bot);
   require('./commands/message')(bot);
