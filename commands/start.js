@@ -50,7 +50,7 @@ module.exports = exports = (bot) => {
         '개발자가 만든 좋은 변호사 찾는 로톡: https://www.lawtalk.co.kr/tg3',
         '메일봇 Github: https://github.com/mooyoul/telegrambot-mailgram',
         '',
-        `${room.username}@${process.env.DOMAIN}으로 이메일을 보내거나,`,
+        `${room.username}@${process.env.DOMAIN} 으로 이메일을 보내거나,`,
         '다음 명령어로 메일봇을 시작해보세요!'
       ].join('\n'), {
         reply_markup: JSON.stringify({
