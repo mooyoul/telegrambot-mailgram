@@ -224,8 +224,11 @@ module.exports = exports = (bot) => {
   mailin.on('message', function (connection, data, content) {
     console.log(data.headers);
 
-    const usernames = data.envelopeTo.map((to) => to.address.split('@')[0])
-      .filter((to) => to);
+    const usernames = data.envelopeTo.map((to) => {
+      const addressChunks = to.address && to.address.split('@');
+
+      return addressChunks && addressChunks.length && addressChunks[0].toLowerCase();
+    }).filter((to) => to);
 
 
     Room.find({
